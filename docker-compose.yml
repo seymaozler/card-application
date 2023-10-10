@@ -1,0 +1,27 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    container_name: card-redis
+    ports:
+      - "6379:6379"
+  mysql:
+    image: mysql:8.1.0
+    container_name: card-mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DATABASE_PASSWORD}
+      MYSQL_DATABASE: cardapp
+      MYSQL_USER: user
+      MYSQL_PASSWORD: ${DATABASE_PASSWORD}
+    ports:
+      - "3306:3306"
+  cardapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: cardapp
+    ports:
+      - "8000:8000"
+    depends_on:
+      - mysql
+      - redis
