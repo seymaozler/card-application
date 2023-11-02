@@ -1,26 +1,26 @@
 # card-application
 
-#To run this project locally, follow the steps below:
+# To run this project locally, follow the steps below:
 
 git clone https://github.com/seymaozler/card-application.git
 
-#Create a virtual environment
+# Create a virtual environment
 
 python -m venv venv
 
-#Activate virtual environment
+# Activate virtual environment
 
 venv\Scripts\activate
 
-#Create a .env file based on .env.example and configure your environment variables:
+# Create a .env file based on .env.example and configure your environment variables:
 
 copy env.example .env
 
-#Build the Docker containers:
+# Build the Docker containers:
 
 docker-compose build
 
-#Start the Docker containers:
+# Start the Docker containers:
 
 docker-compose up -d
 
@@ -30,7 +30,7 @@ Running this command will resolve the issue:
 
 docker start cardapp
 
-#And again;
+# And again;
 docker-compose up -d
 
 The API documentation is available at http://localhost:8000/docs
