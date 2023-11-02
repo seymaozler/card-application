@@ -35,9 +35,13 @@ docker-compose up -d
 
 The API documentation is available at http://localhost:8000/docs
 
-# Endpoints
+# Endpoint Examples
 ## Create User
 ![create-user](https://github.com/seymaozler/card-application/assets/63790943/eaff879e-29ea-4f75-88f3-6b4e0101d699)
+
+##  After the user is created, a card with the label "SYSTEM CARD" is assigned to the user.
+![ilk-kart-listesi](https://github.com/seymaozler/card-application/assets/63790943/19b13986-60ec-43d9-8413-987ec8b8e0e5)
+
 
 ## Login User
 ![login-user](https://github.com/seymaozler/card-application/assets/63790943/c5426995-2fc7-4ae3-8051-df65b3e768ce)
@@ -54,5 +58,11 @@ The API documentation is available at http://localhost:8000/docs
 ## Delete Card
 ![delete-card](https://github.com/seymaozler/card-application/assets/63790943/c5ddb9b7-c86e-4b6d-aae0-92ff6ba9f7ec)
 
+## Add Transaction
+![add-transactions](https://github.com/seymaozler/card-application/assets/63790943/7a1b9c34-0cfe-428f-819e-dd049cda24dd)
 
+## Transaction Details
+![transaction-details](https://github.com/seymaozler/card-application/assets/63790943/bd5bd832-9577-4f84-a1b5-a8ced21d6f77)
 
+## Get Transactions by Keyword
+![searc-transaction](https://github.com/seymaozler/card-application/assets/63790943/93a03a03-2e6d-4c96-85d9-7a70001f4615)
